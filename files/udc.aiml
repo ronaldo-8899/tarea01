@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Hola, soy * un gusto</pattern>
+    <template>
+        Hola <star/>, soy tu asistente virtual, en que te puedo ayudar
+    </template>
+  </category>
+  <category>
+      <pattern>Muestrame el significado de la palabra *</pattern>
+      <template> Hemos generando la informacion de la palabra <star/>
+      <button>
+          <text>Presione aqui por favor!</text>
+          <url>https://dle.rae.es/<star/>?m=form</url>
+      </button>      
+      </template>
+  </category>
+  <category>
+      <pattern>Muestrame la ubicacion de *</pattern>
+      <template> Hemos encontrado el lugar con nombre: <star/>
+      <button>
+          <text>Presione aqui por favor!</text>
+          <url>https://google.com/maps?q=<star/></url>
+      </button>      
+      </template>
+  </category>
+</aiml>
